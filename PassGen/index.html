@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>PassGen 🔑</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>PassGen 🔑</h2>
+        </div>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+
+        <!-- Form for options ~ Cannot get to work :( -->
+
+        <h3>Options</h3>
+
+        <form id="options" action="">
+          <label for="fname">Length</label>
+          <input type="text" id="length" name="length" placeholder="8 - 128">
+          <input type="checkbox" id="crit1" name="criteria1" value=True>
+          <label for="vehicle1"> Case Sensitive</label>
+          <input type="checkbox" id="crit2" name="criteria2" value=True>
+          <label for="vehicle2"> Special Characters</label>
+          <input type="checkbox" id="crit3" name="criteria3" value=True>
+          <label for="vehicle3"> Numbers</label>
+          <input type="button" onclick="" value="Submit">
+        </form>
+
+        <div class="card-footer">
+          <button id="generate" class="btn">Generate</button>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
